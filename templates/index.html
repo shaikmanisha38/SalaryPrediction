@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SalaryPredict</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+    }
+
+    /* Navbar */
+    header {
+      width: 100%;
+      padding: 15px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #f2f2f2;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #6c63ff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #6c63ff;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;       /* Vertically center */
+      justify-content: center;   /* Horizontally center */
+      padding: 60px 8%;
+      min-height: 80vh;          /* Take most of the screen height */
+      text-align: center;
+      gap: 50px;                 /* Space between text and image */
+   }
+    .hero-text {
+      max-width: 500px;
+   }
+
+   .hero-text h1 {
+     font-size: 36px;
+     margin-bottom: 20px;
+   }
+
+   .hero-text p {
+     font-size: 18px;
+     margin-bottom: 30px;
+     color: #666;
+   }
+
+   .hero-img img {
+     width: 400px;
+     max-width: 100%;
+   }
+   
+    .hero-text .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background: #6c63ff;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .hero-text .btn:hover {
+      background: #5a54e6;
+    }
+
+    .hero-img img {
+      width: 450px;
+      max-width: 100%;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text {
+        max-width: 100%;
+      }
+
+      .hero-img {
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <header>
+    <div class="logo">Salary<span>Predict.</span></div>
+    <nav>
+      <ul>
+      <li><a href="/" class="active">Home</a></li>
+      <li><a href="/predict">Predict</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Software Industry Salary Prediction</h1>
+      <p>Ignite the most powerful growth engine you have ever built for your company</p>
+      <a href="/predict" class="btn">Salary</a>
+    </div>
+    <div class="hero-img">
+      <img src="../static/pic2.png" alt="Illustration">
+    </div>
+  </section>
+
+</body>
+</html>

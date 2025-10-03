@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SalaryPredict - Result</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+    }
+
+    /* Navbar */
+    header {
+      width: 100%;
+      padding: 15px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #f2f2f2;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #6c63ff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #6c63ff;
+    }
+
+    /* Result Section */
+    .result-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 8%;
+      gap: 50px;
+    }
+
+    .result-text {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    .result-text span {
+      font-size: 26px;
+      font-weight: bold;
+      color: #333;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .result-img img {
+      width: 400px;
+      max-width: 100%;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .result-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .result-img {
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo">Salary<span>Predict.</span></div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Result Section -->
+  <section class="result-section">
+    <div class="result-text">
+      <p>The Predicted Salary is: </p>
+      <span>{{ prediction }}</span>
+    </div>
+    <div class="result-img">
+      <img src="../static/pic4.png" alt="Salary Prediction Illustration">
+    </div>
+  </section>
+
+</body>
+</html>
